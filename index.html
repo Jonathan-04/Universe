@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/image-day.css" />
+    <link rel="stylesheet" href="css/explore.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css" />
+  </head>
+  <body>
+    <div class="block" id="luxy">
+      <div class="container-banner">
+        <div class="banner-video">
+          <video
+            src="img/nebula_red_-_31420 (Original).mp4"
+            muted
+            loop
+            autoplay
+            type="video/mp4"
+          ></video>
+          <div class="banner-text">
+            <div class="items">
+              <ul>
+                <li><a href="#image-day">Image of the day</a></li>
+                <li><a href="#explore">Explore</a></li>
+              </ul>
+            </div>
+            <div class="title">
+              <h2>EXPLORE THE UNIVERSE</h2>
+            </div>
+            <div class="scroll">
+              <ul>
+                <li><a href="#image-day">Scroll</a></li>
+                <li>
+                  <a href="#image-day"
+                    ><i class="fa-solid fa-angles-down"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-day" id="image-day">
+        <div class="title-image-day">
+          <h2>IMAGE OF THE DAY</h2>
+        </div>
+        <div class="container-image-day">
+          <p>Crab Nebula, as Seen by Herschel and Hubble</p>
+          <img src="img/PIA17563_medium.jpg" alt="" />
+        </div>
+      </div>
+      <div class="explore" id="explore">
+        <div class="title-explore">
+          <h2>EXPLORE THE IMMENSITY</h2>
+        </div>
+        <div class="explore-items">
+          <div class="item-explore">
+            <p>Charming Spiral Galaxy</p>
+            <div class="img-explore">
+              <img src="img/GSFC_20171208_Archive_e000877_small.jpg" alt="" />
+            </div>
+          </div>
+          <div class="item-explore">
+            <p>Auroras in Jupiter's Atmosphere</p>
+            <div class="img-explore">
+              <img
+                src="img/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o_small.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item-explore">
+            <p>Surprisingly Young Galaxy</p>
+            <div class="img-explore">
+              <img src="img/GSFC_20171208_Archive_e001901_small.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="explore-2">
+        <div class="explore-2-item">
+          <div class="img-explore-2">
+            <img src="img/PIA15415_small.jpg" alt="" />
+          </div>
+          <div class="text-explore-2">
+            <h2>Cygnus Loop Nebula</h2>
+            <p id="parrafo-explore-2">
+              Wispy tendrils of hot dust and gas glow brightly in this
+              ultraviolet image of the Cygnus Loop nebula, taken by NASA Galaxy
+              Evolution Explorer. The nebula lies about 1,500 light-years away.
+            </p>
+            <p>Date Created: 2012-03-22</p>
+          </div>
+        </div>
+        <div class="explore-2-item">
+          <div class="text-explore-2">
+            <h2>Cygnus Loop Nebula</h2>
+            <p id="parrafo-explore-2">
+              Wispy tendrils of hot dust and gas glow brightly in this
+              ultraviolet image of the Cygnus Loop nebula, taken by NASA Galaxy
+              Evolution Explorer. The nebula lies about 1,500 light-years away.
+            </p>
+            <p>Date Created: 2012-03-22</p>
+          </div>
+          <div class="img-explore-2">
+            <img src="img/PIA15415_small.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+    <script src="js/scroll.js"></script>
+    <script>
+      var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+      if (!isMobile) {
+        luxy.init({
+          wrapper: "#luxy",
+          wrapperSpeed: 0.07,
+        });
+      }
+    </script>
+  </body>
+</html>
